@@ -14,7 +14,6 @@ public class Test {
         int numEmployees = scanner.nextInt();
 
         for (int i = 0; i < numEmployees; i++) {
-            System.out.printf("Enter details for employee %d:\n", i+1);
             System.out.print("First name: ");
             String firstName = scanner.next();
             System.out.print("Last name: ");
@@ -32,7 +31,7 @@ public class Test {
             employees.add(employee);
         }
 
-        Company company = new Company("Acme Corp", employees);
+        Company company = new Company("Ingel Corp", employees);
 
         System.out.println("Average salary: " + company.averageSalary());
     }
